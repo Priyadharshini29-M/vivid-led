@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LED Display</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">VIVID LED</div>
+      <div class="loader-bar">
+        <div class="loader-progress" id="loaderProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="led-grid"></div>
+
+ 
+<header>
+  <div class="header-container">
+    <div class="logo">
+  <img src="/images/mbl.png" alt="VIVID LED" class="logo-desktop">
+  <img src="/images/mbl.png" alt="VIVID LED Mobile" class="logo-mobile">
+</div>
+
+    
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-right">
+      <button class="cta-button">Get a Quote</button>
+      <button class="hamburger" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+  
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Elevate Your Brand with Cutting Edge LED Displays</h1>
+      <p>Custom LED walls, event lighting, and expert support for flawless execution. From concerts to corporate stages and crisp 4K displays with dynamic lighting.</p>
+      <button class="explore-btn">Explore Products</button>
+    </div>
+    <div class="led-animation" id="ledAnimation"></div>
+  </section>
+
+  <section class="trusted-section">
+    <h2>Trusted by the world's most innovative brands</h2>
+    <div class="brand-logos">
+      <img src="/images/tanishq.png" alt="Tanishq">
+      <img src="/images/titanwhite.png" alt="Titan">
+      <img src="/images/big.png" alt="BigBasket">
+      <img src="/images/v-guard.png" alt="V-Guard">
+    </div>
+  </section>
+
+  
+
+  <section class="industry-section">
+    <div class="glow-ball ball1"></div>
+    <div class="glow-ball ball2"></div>
+    <div class="glow-ball ball3"></div>
+
+    <h2 class="section-title">Tailored for every Industry</h2>
+    <div class="industries">
+      <div class="industry">
+        <img src="/images/retail.svg" alt="Retail">
+        <p>Retail</p>
+      </div>
+      <div class="industry">
+        <img src="/images/classroom.svg" alt="Education">
+        <p>Education</p>
+      </div>
+      <div class="industry">
+        <img src="/images/qsr.svg" alt="QSR">
+        <p>QSR</p>
+      </div>
+      <div class="industry">
+        <img src="/images/corporate.svg" alt="Corporate">
+        <p>Corporate</p>
+      </div>
+      <div class="industry">
+        <img src="/images/controlroom.svg" alt="Control Room">
+        <p>Control-Room</p>
+      </div>
+      <div class="industry">
+        <img src="/images/hospitality.svg" alt="Hospitality">
+        <p>Hospitality</p>
+      </div>
+      <div class="industry">
+        <img src="/images/airport.svg" alt="Airport">
+        <p>Airport</p>
+      </div>
+      <div class="industry">
+        <img src="/images/DOOH.svg" alt="DOOH">
+        <p>DOOH</p>
+      </div>
+      <div class="industry">
+        <img src="/images/sports.svg" alt="Sports">
+        <p>Sports</p>
+      </div>
+      <div class="industry">
+        <img src="/images/broadcasting.svg" alt="Broadcasting">
+        <p>Broadcasting</p>
+      </div>
+      <div class="industry">
+        <img src="/images/healthcare.svg" alt="Healthcare">
+        <p>Healthcare</p>
+      </div>
+    </div>
+  </section>
+<section class="led-systems-section">
+  <div class="led-systems-container">
+    <h2>LED Systems Collection</h2>
+    <div class="led-systems-grid">
+      <a href="indoor.html" class="led-system-card">
+        <img src="/images/vivid1.jpg" alt="Indoor LED">
+        <h3>Indoor</h3>
+        <p>High-resolution indoor LED display systems</p>
+      </a>
+      <a href="outdoor.html" class="led-system-card">
+        <img src="/images/vivid2.jpg" alt="Outdoor LED">
+        <h3>Outdoor</h3>
+        <p>Durable outdoor LED display systems</p>
+      </a>
+      <a href="finepitch.html" class="led-system-card">
+        <img src="/images/vivid3.jpg" alt="Finepitch LED">
+        <h3>Finepitch</h3>
+        <p>Ultra-high resolution fine-pitch displays</p>
+      </a>
+      <a href="creative.html" class="led-system-card">
+        <img src="/images/vivid4.png" alt="Creative LED">
+        <h3>Creative</h3>
+        <p>Customizable creative LED display solutions</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Centers Section -->
+  <section class="experience-section">
+  <div class="section-container">
+    <h2>Visit us at VividLED's comprehensive visual technology experience centers</h2>
+    <div class="experience-grid">
+      <a href="completion.html" class="experience-card">
+        <div class="card-image">
+          <img src="/images/coimbatore.jpg" alt="Completion Experience Center">
+        </div>
+        <div class="card-content">
+          <h3>Coimbatore</h3>
+          <p>Our comprehensive experience center focusing thousands of unique and digital systems</p>
+          <span class="learn-more">Learn More →</span>
+        </div>
+      </a>
+      
+      <a href="integration.html" class="experience-card">
+        <div class="card-image">
+          <img src="/images/bengaluru.jpg" alt="Integration Experience Center">
+        </div>
+        <div class="card-content">
+          <h3>Bengaluru</h3>
+          <p>Building creating scenes to the distant valley of India</p>
+          <span class="learn-more">Learn More →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- LED Systems Section -->
+  <!-- LED Systems Section - Asymmetrical Grid -->
+<section class="content-section led-systems-section">
+  <div class="section-container">
+    <h2>Learn more about LED Systems</h2>
+    <p class="subtitle">Discover our innovative LED solutions with cutting-edge technology</p>
+    
+    <div class="asymmetrical-grid">
+      <!-- Card 1 - Larger card -->
+      <a href="#" class="grid-card large-card">
+        <div class="card-image">
+          <img src="/images/about1.jpg" alt="LED Vision Works">
+        </div>
+        <div class="card-content">
+          <h3>The Benefits of LED Vision Works</h3>
+          <p>Learn how LED vision will offer a better and efficient visual input for development</p>
+          <span class="learn-more">Explore More →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+      
+      <!-- Card 2 -->
+      <a href="#" class="grid-card">
+        <div class="card-image">
+          <img src="/images/about2.jpg" alt="Cleaning LED Display">
+        </div>
+        <div class="card-content">
+          <h3>Cleaning the Right LED Display</h3>
+          <p>Digital design is created when creating a LED display for your current vision</p>
+          <span class="learn-more">Learn More →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+      
+      <!-- Card 3 -->
+      <a href="#" class="grid-card">
+        <div class="card-image">
+          <img src="/images/about3.jpg" alt="LED Social Solutions">
+        </div>
+        <div class="card-content">
+          <h3>LED Solutions for Social</h3>
+          <p>Explore the LED display as best as our customers can serve in the world</p>
+          <span class="learn-more">Discover →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+      
+      <!-- Card 4 - Tall card -->
+      <a href="#" class="grid-card tall-card">
+        <div class="card-image">
+          <img src="/images/about4.jpg" alt="Corporate LED Applications">
+        </div>
+        <div class="card-content">
+          <h3>Corporate LED Display Applications</h3>
+          <p>Optimize the basics and a LED display is designed using key connections and training</p>
+          <span class="learn-more">View Applications →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+      
+      <!-- Card 5 -->
+      <a href="#" class="grid-card">
+        <div class="card-image">
+          <img src="/images/about5.jpg" alt="Cumulating LED Display">
+        </div>
+        <div class="card-content">
+          <h3>Cumulating Your LED Display</h3>
+          <p>Improve the impact of the LED display on the use of new tools for your business areas</p>
+          <span class="learn-more">Read More →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+      
+      <!-- Card 6 - Wide card -->
+      <a href="#" class="grid-card wide-card">
+        <div class="card-image">
+          <img src="/images/about6.jpg" alt="LED Vision Work">
+        </div>
+        <div class="card-content">
+          <h3>Introducing LED Vision Work</h3>
+          <p>Digital technologies are used with customized networking techniques</p>
+          <span class="learn-more">See Details →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+      
+      <!-- Card 7 -->
+      <a href="#" class="grid-card">
+        <div class="card-image">
+          <img src="/images/about7.jpg" alt="LED Expert Support">
+        </div>
+        <div class="card-content">
+          <h3>Expert Support for LED Dialysis</h3>
+          <p>Enhance the importance of users' expertise that can help you get home and put LED lights</p>
+          <span class="learn-more">Get Support →</span>
+        </div>
+        <div class="glow-effect"></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Testimonials Section -->
+ <section class="content-section testimonials-section">
+  <div class="section-container">
+    <h2>What our customers are saying about their experience</h2>
+    <div class="testimonials-slider">
+      <div class="slider-container">
+        <div class="content-grid">
+          <div class="content-card">
+            <p>Using the LED tool to fit digital system, it helps a good experience and build up and improve our ability to fly. That supports our own highly competitive and able to maintain all the time ahead.</p>
+            <div class="author">Managing Ethernet, Mobile License for LCL Channel</div>
+          </div>
+          <div class="content-card">
+            <p>Excellent support has the aim to fit our digital team into some of our professional strengths and capabilities. This is worthy of being the most well working skill that Vivid uses.</p>
+            <div class="author">Share Manager, Air Science, Microsoft</div>
+          </div>
+          <div class="content-card">
+            <p>Experience Vivid uses a large-scale virtual smartphone, which provides an immersive experience with the global user experience, reflecting their career...</p>
+            <div class="author">Learning Technology Director, Tech Corp</div>
+          </div>
+          <div class="content-card">
+            <p>The platform's intuitive interface reduced our training time by 40% while increasing team productivity significantly. A game-changer for our operations.</p>
+            <div class="author">Operations Lead, Retail Solutions Inc.</div>
+          </div>
+          <div class="content-card">
+            <p>We've seen a 30% improvement in customer satisfaction scores since implementing this solution. The analytics dashboard provides invaluable insights.</p>
+            <div class="author">Customer Experience Manager, ServicePro</div>
+          </div>
+          <div class="content-card">
+            <p>Integration with our existing systems was seamless. The support team was responsive and knowledgeable throughout the implementation process.</p>
+            <div class="author">IT Director, Financial Partners Group</div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-nav prev" aria-label="Previous testimonial">‹</button>
+      <button class="slider-nav next" aria-label="Next testimonial">›</button>
+      <div class="slider-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Add this below your faq section -->
+<!-- Add this section below your previous content -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-intro">
+      <h3>What types of LED displays do you offer for businesses?</h3>
+      <p>We offer a comprehensive range of LED display solutions tailored to meet various business needs. Our offerings include indoor LED displays, outdoor LED displays, LED video walls, transparent LED displays, and custom LED display solutions.</p>
+    </div>
+    
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          What industries can benefit from your LED display solutions?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our LED solutions serve diverse industries including retail, hospitality, corporate, education, entertainment, sports venues, transportation hubs, and more. Any business looking to enhance visual communication can benefit from our displays.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          How do your LED displays enhance business visibility and engagement?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our high-brightness, vibrant displays capture attention effectively. They enable dynamic content delivery, interactive experiences, and real-time information updates that significantly increase customer engagement and brand recall.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          What kind of support and maintenance services do you provide?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We offer comprehensive support including 24/7 technical assistance, regular maintenance programs, on-site repairs, remote diagnostics, and warranty coverage. Our team ensures your displays operate at peak performance.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          How can businesses integrate LED displays into their existing infrastructure?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our displays feature versatile connectivity options (HDMI, USB, network) and compatibility with most content management systems. We provide custom integration services to seamlessly connect with your current AV infrastructure and IT systems.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          What sets your LED display solutions apart from competitors?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We differentiate through superior pixel pitch technology, energy efficiency, customizable configurations, robust construction for all environments, and our proprietary content management platform with advanced scheduling capabilities.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Can your LED displays be used for advertising and promotional purposes?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! Our displays are perfect for digital signage advertising, promotional campaigns, product showcases, and brand storytelling. They support high-resolution images, videos, animations, and even interactive content to maximize impact.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-wave"></div>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4 class="footer-heading">VividLED Systems</h4>
+      <div class="footer-content">
+        <div class="footer-address">
+          <i class="fas fa-map-marker-alt footer-icon"></i>
+          <p>
+            Marudhar Tech Global Pvt Ltd, 70/2,<br>
+            Panaimarathoor Main Road,<br>
+            Telegupalayam Post, Coimbatore,<br>
+            Tamilnadu, INDIA - 641039
+          </p>
+        </div>
+        <div class="footer-email">
+          <i class="fas fa-envelope footer-icon"></i>
+          <p>info@vividled.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4 class="footer-heading">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4 class="footer-heading">Contact Us</h4>
+      <div class="footer-contacts">
+        <div class="contact-item">
+          <i class="fas fa-phone-alt footer-icon"></i>
+          <p>Sales: +91 9626262481</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-headset footer-icon"></i>
+          <p>Service: +91 9626277111</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-tools footer-icon"></i>
+          <p>Technical: +91 99404 04151</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4 class="footer-heading">Stay Connected</h4>
+      <div class="social-icons">
+        <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="newsletter">
+        <p>Subscribe to our newsletter</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Your email address">
+          <button class="subscribe-btn">Go</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-container">
+      <p>&copy; 2023 VividLED Systems. All Rights Reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
